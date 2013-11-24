@@ -26,16 +26,17 @@ class IfengSpider(BaseSpider):
                 item['desc'] = rootContent.select(jstr).select('text()').extract()
                 item['link'] = rootContent.select(jstr).select('./@href').extract()
                 items.append(item)
-            
+            count=1
             for item in items:
                 if len(item) > 1 and len(item['desc']) > 0 \
                    and len(item['link']) > 0:
                     print "[item:",item['desc'][0].encode('utf8'),
                     print "] url:",item['link'][0]
+                    headCount="[%d]" % count
+                    count = count + 1
+#                    fidFile.write(headCount)
                     fidFile.write(item['desc'][0].encode('utf8'))
-                    fidFile.write("[")
                     fidFile.write(item['link'][0])
-                    fidFile.write("]")
-                    fidFile.write('\n')
+                    fidFile.write(' \n')
         fidFile.close()
 SPIDER = IfengSpider()
