@@ -9,4 +9,5 @@ class SpacewebItem(Item):
     # define the fields for your item here like:
     # name = Field()
     desc = Field()
+    link = Field()
     pass
