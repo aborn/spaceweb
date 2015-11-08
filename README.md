@@ -7,7 +7,7 @@ First of all, assue you have installed scrapy.
 
 ## USAGE
 1. install python 2.7 
-2. install scrapy
+2. install scrapy (ref ./deps/install.sh)
 3. runing table (in spiders) using following cmd
    * $scrapy crawl spaceweb
 
