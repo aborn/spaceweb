@@ -16,3 +16,4 @@ Aborn Jiang (aborn.jiang@gmail.com)
 
 ## VERSION
 * 2013-11-23 v0.1
+* 2015-11-08 v0.2
